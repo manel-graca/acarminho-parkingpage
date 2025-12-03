@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Carminho - Temporariamente Encerrado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+    /* Background */
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("background.png") no-repeat;
+    
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    /* Texto e layout */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    line-height: 1.7;
+
+    /* Drop-shadow geral dos textos */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+/* TÍTULO MAIS BONITO E NÍTIDO */
+h1 {
+    color: #00f0d1;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+    margin-top: 40px;
+}
+
+/* PARÁGRAFOS COM MAIOR CONTRASTE */
+p {
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 880px;
+    margin: 10px auto;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.75);
+}
+
+/* QR e Labels mais acessíveis */
+.qr-label {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+.qr-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Icons sociais maiores + sombreados */
+.social-connect-item i {
+    font-size: 38px;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.6));
+}
+
+/* Link email */
+.contact-info a {
+    color: #00f0d1;
+    font-weight: 700;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+
+    body {
+        background-size: cover; /* evita distorção */
+        background-attachment: scroll; /* mobile-friendly */
+    }
+
+    .qr-img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .qr-row {
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+}
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+
+        .logo-image {
+            max-width: 220px;
+            width: 70%;
+            height: auto;
+        }
+
+        .info-section {
+            margin-top: 25px;
+        }
+
+        /* Área dos QR Codes */
+        .qr-row {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .qr-box {
+            text-align: center;
+        }
+
+        .qr-label {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .qr-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 8px;
+        }
+
+        .social-links-column {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        .social-connect-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .social-connect-item:hover {
+            color: #00f0d1;
+        }
+
+        .social-connect-item i {
+            font-size: 32px;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 32px;
+            color: #00f0d1;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .contact-info {
+            margin-top: 35px;
+            font-size: 20px;
+        }
+
+        .contact-info a {
+            color: #00f0d1;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .qr-img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="acarminho-logo-transparente.png" class="logo-image" alt="A Carminho Logo">
+
+        <div class="info-section">
+            <div class="qr-row">
+
+                <div class="qr-box">
+                    <div class="qr-label">Instagram</div>
+                    <img src="qr-instagram.png" alt="QR Instagram" class="qr-img">
+                </div>
+
+                <div class="qr-box">
+                    <div class="qr-label">Facebook</div>
+                    <img src="qr-facebook.png" alt="QR Facebook" class="qr-img">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="social-links-column">
+            <a href="https://instagram.com/acarminho.oficial" target="_blank" class="social-connect-item">
+                <i class="fab fa-instagram"></i> @acarminho.oficial
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61581467925472" target="_blank" class="social-connect-item">
+                <i class="fab fa-facebook"></i> A Carminho
+            </a>
+        </div>
+
+        <h1>ACARMINHO.COM ESTÁ TEMPORARIAMENTE EM BAIXO.</h1>
+
+        <p>Neste momento estamos a vender sobretudo pelo Instagram e Facebook, por isso o site vai ficar parado por agora. Qualquer encomenda é só enviar mensagem nas redes!</p>
+
+        <div class="contact-info">
+            Dúvidas urgentes: <a href="mailto:a.carminho.oficial@gmail.com">a.carminho.oficial@gmail.com</a>
+        </div>
+
+    </div>
+</body>
+</html>
